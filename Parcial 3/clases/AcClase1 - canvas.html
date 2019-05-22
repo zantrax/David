@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Canvas</title>
+<script type="text/javascript">
+function iniciar()
+{
+	var elemento=document.getElementById('lienzo');
+	var lienzo=elemento.getContext('2d');
+	lienzo.fillStyle="#000099";
+	lienzo.strokeStyle="#990000";
+	lienzo.strokeRect(100,100,120,120);
+	lienzo.fillRect(110,110,100,100);
+	lienzo.clearRect(120,120,80,80);
+}
+</script>
+<style type="text/css">
+canvas 
+{
+	border:1px solid #000;
+}
+</style>
+</head>
+
+<body onLoad="iniciar()">
+<canvas id="lienzo" width="500" height="500">
+</canvas>
+</body>
+</html>

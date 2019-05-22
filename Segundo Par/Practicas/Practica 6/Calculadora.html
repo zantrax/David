@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript" src="calculadorajvs.js">
+</script>
+</head>
+<style>
+body{
+	background-color:#033;
+}
+input{
+	background-color:#666;
+	margin-bottom:30px;
+	width:50%;
+	padding:25px;
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	border:1px solid#666;
+	
+}
+input:focus, textarea:focus{
+	boarder: 1px solid #F00;
+	
+}
+input[type="button"]{
+	margin-bottom:50; 
+	color:#FFF;
+	border:none;
+	font-size:32px;
+}
+input[type="button"]:hover{
+	background:#CCC;
+	cursor:pointer;
+}
+h1{
+	 padding:10px;
+	 color:#FFF;
+	 text-align:center;
+	 font-size:100px;
+	 font-style:oblique;
+	 background: url(bk6.jpg);
+	 background-position:center;
+	 border:5px solid #000;
+}
+
+</style>
+<body>
+<center>
+	<img src="logo-david.png">
+	<h1>CALCULADORA</h1>
+	<form>
+    <input type="button" value="Suma" onClick="suma()"/> 
+	</form>
+	<form>
+    <input type="button" value="Resta" onClick="resta()"/> 
+	</form>
+    <form>
+    <input type="button" value="Multiplicar" onClick="multi()"/> 
+	</form>
+    <form>
+    <input type="button" value="Dividir" onClick="divi()"/> 
+	</form>
+    <form>
+    <input type="button" value="Modulo" onClick="modul()"/> 
+	</form>
+    <form>
+    <input type="button" value="Potencia" onClick="potencia()"/> 
+	</form>
+    <form>
+    <input type="button" value="Ayuda" onClick="ayuda()"/> 
+	</form>    
+ </center>
+</body>
+</html>

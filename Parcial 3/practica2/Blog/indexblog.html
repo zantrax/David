@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Practica 2 - Blog</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+  <script src="dyd_img.js"></script>
+  <style>
+  form{
+	widht:50%;
+	border:1px solid #FFF;
+	margin:100px;
+	padding:20px;
+}
+label{
+	font-size:12px;
+	display:block;
+	width:100%;
+	
+}
+textarea{
+	resize:vertical;
+	max-height:300px;
+	min-height:100px;	
+}
+input, textarea{
+	margin-bottom:20px;
+	width:100%;
+	padding:10px;
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	border:1px solid#666;
+}
+input:focus, textarea:focus{
+	boarder: 1px solid #F00;
+	
+}
+input[type="submit"]{
+	margin-bottom:0;
+	background:#1668c4; 
+	color:#fff;
+	border:none;
+}
+input[type="submit"]:hover{
+	background:#00F;
+	cursor:pointer;
+}
+
+.centro2
+{
+width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+ .btn{
+        			border-radius: 3px;
+        			display: inline-block;
+        			padding: 20px 15px;
+        			text-decoration: none;
+        			text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+        			box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        		}
+
+        		.btn-green{
+        			color: white;
+        			background-color: #3CC93F;
+        		}
+        		.btn-green:hover{
+        			background-color: #37B839;
+        		}
+        		.btn-green:active{
+        			background-color: #29962A;
+        		}
+
+        		.btn-red{
+        			color: white;
+        			background-color: #E34242;
+        		}
+        		.btn-red:hover{
+        			background-color: #C43535;
+        		}
+        		.btn-red:active{
+        			background-color: #A62828;
+        		}
+            #cajasoltar{
+            	  width: 500px;
+            	  height: 300px;
+            	  margin: 10px;
+            	  border: 3px solid #999999;
+            	  }
+                #cajasoltar > img{
+                	  width: 500px;
+                	  height: 300px;
+
+                	  }
+            #cajaimagenes{
+
+            			width: 110px;
+            			margin: 10px;
+            			border: 1px solid #999999;
+            			}
+            #cajaimagenes > img{
+             float: left;
+             padding: 5px;
+             }
+             canvas{
+             background: rgb(233, 238, 232,.6) ;
+             }
+             
+
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Clarence Taylor</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Pasatiempos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Fortalezas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Formulario</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Daviid
+          <span class="text-primary">07</span>
+        </h1>
+        <div class="subheading mb-5">Correo de Contacto ·
+          <a href="mailto:180300@upslp.edu.mx">180300@upslp.edu.mx</a>
+        </div>
+        <p class="lead mb-5">Soy un estudiante de la Universidad Politecnica de San Luis Potosi, en la carrera de Ingenieria en Técnologias de la Información.</p>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Pasatiempos</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Atletismo</h3>
+            <div class="subheading mb-3">Correr Sin Parar</div>
+            <p>Uno de mis pasatiempos favoritos es ir a correr, actualemente llevo 4 meses entrenando duramente para mi primer competencia, aunque aun no se en que categoria especializarme. Voy todas las tardes a correr con algunos compañeros a las instalaciones de la universidad.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"><img src="img/pasatiempos1.jpg" width="500" height="300"> </span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Armar el cubo de rubik</h3>
+            <div class="subheading mb-3">Colores y Habilidad</div>
+            <p>Me gusta mucho cuando no se que hacer ponerme a armar el cubo rubik y sus diferentes variaciones. Desde la secundaria gracias a un amigo aprendi a como resolver el algoritmo, ahora solo practico para mejorar mi tiempo y estoy empezando a coleccionarlos.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"><img src="img/pasatiempos2.jpg" width="500" height="300"> </span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Ver sereies, peliculas y documentales.</h3>
+            <div class="subheading mb-3"></div>
+            <p>Disfruto mucho pasar el tiempo viendo series o peliculas,sobretodo las de netflix. Ya que siempre he sido una persona que aprende mucho visualmente y en esta ocasion aprendo y me divierto a la vez</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"><img src="img/pasatiempos3.jpg" width="500" height="300"></span>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Fortalezas</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Responsable</h3>
+            <div class="subheading mb-3">Responsabilidad y Disciplina</div>
+              <p>Me considero una persona bastante responsable para las cosas que tengo que hacer ya que no me gusta que me llamen la atencion, y me gusta ser disciplinado en todo lo que hago para que todo salgo como lo planeado y no haya errores.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> <img src="img/Responsabilidad.png" width="500" height="300"></span>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+      <!-- GALERIA DE IMAGENES-->
+        <h2 class="mb-5">Galeria</h2>
+        	<article class="centro2">
+	<section id="cajaimagenes" style="float: right;">
+		<img id="imagen1" src="img/galeria/1.jpg" width="100" height="100">
+	    <img id="imagen2" src="img/galeria/2.jpg"width="100" height="100">
+	    <img id="imagen3" src="img/galeria/3.jpg" width="100" height="100">
+	</section>
+	<section id="cajaimagenes" style="float: left;">
+		<img id="imagen8" src="img/galeria/4.jpg" width="100" height="100">
+	    <img id="imagen5" src="img/galeria/5.jpg"width="100" height="100">
+	    <img id="imagen6" src="img/galeria/6.jpg" width="100" height="100">
+	</section>
+    <div align="center">
+	<section id="cajasoltar">Arrastre y suelte la imagen aquí</section>
+
+			
+
+       </div>
+     </section> 
+       
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Formulario</h2>
+        <form>
+	<label for="nombre">Nombre</label>
+	<input type="text" id="nombre" placeholder="Escribe tu nombre">
+	<label for="email">Email</label>
+	<input type="email" id="email" placeholder="Escibe tu email">
+	<label for="mensaje">Mensaje</label>
+	<textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+	<input type="submit" value="Enviar">
+	</form>
+      </div>
+    </section>
+
+ 
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>

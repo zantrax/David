@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Formulario</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+
+  </head>
+
+<style>
+	
+	form{
+	widht:50%;
+	border:1px solid #FFF;
+	margin:100px;
+	padding:20px;
+}
+label{
+	font-size:12px;
+	display:block;
+	width:100%;
+	
+}
+textarea{
+	resize:vertical;
+	max-height:300px;
+	min-height:100px;	
+}
+input, textarea{
+	margin-bottom:20px;
+	width:100%;
+	padding:10px;
+	-webkit-box-sizing: border-box;
+	box-sizing:border-box;
+	border:1px solid#666;
+}
+input:focus, textarea:focus{
+	boarder: 1px solid #F00;
+	
+}
+input[type="submit"]{
+	margin-bottom:0;
+	background:#1668c4; 
+	color:#fff;
+	border:none;
+}
+input[type="submit"]:hover{
+	background:#00F;
+	cursor:pointer;
+}
+	
+</style>
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Arte del Mundo.</span>
+    <span class="site-heading-lower">Museo del Louvre.</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="indexmuseo.html">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="pinturas.html">Pinturas
+            <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="esculturas.html">Esculturas
+            <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="formulario.html">Formulario
+            <span class="sr-only">(current)</span>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+          
+          
+  
+          <center>
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Formualario</span>
+                <span class="section-heading-lower">Deja tus Dudas</span>
+              </h2>
+             </div>
+          </center>
+                 <form>
+					<label for="nombre"><h2>Nombre</h2></label>
+					<input type="text" id="nombre" placeholder="Escribe tu nombre">
+					<label for="email"><h2>Email</h2></label>
+					<input type="email" id="email" placeholder="Escibe tu email">
+					<label for="mensaje"><h2>Mensaje</h2></label>
+					<textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+					<input type="submit" value="Enviar">
+				</form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; DaviidCompany2019</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  <!-- Script to highlight the active date in the hours list -->
+  <script>
+    $('.list-hours li').eq(new Date().getDay()).addClass('today');
+  </script>
+
+</html>

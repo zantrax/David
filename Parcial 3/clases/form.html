@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript">
+	function iniciar()
+	{
+		var boton=document.getElementById('grabar');
+		boton.addEventListener('click', nuevoitem, false);
+	}
+	function nuevoitem()
+	{
+		var clave=document.getElementById('clave').value;
+		var valor=document.getElementById('texto').value;
+		sessionStorage.setItem(clave,valor);
+		mostrar(clave);
+	}
+	function mostrar (clave)
+	{
+		var cajadatos=document.getElementById('cajadatos');
+		var valor=sessionStorage.getItem(clave);
+		cajadatos.innerHTML='<div>'+clave+' - '+valor+'</div>';
+	}
+	window.addEventListener('load',iniciar,false);
+</script>
+<style type="text/css">
+#cajaformulario
+{
+	float:left;
+	padding:20px;
+	border:3px solid #63C;
+}
+#cajadatos
+{
+	float:left;
+	width:400px;
+	margin-left:20px;
+	padding:20px;
+	border:1px solid #F0F;
+}
+#clave,#texto
+{
+	widht:200px;
+}
+#cajadatos > div
+{
+	padding: 7px;
+	border-bottom:1px solid #C00;
+}
+</style>
+</head>
+
+<body>
+<section id="cajaformulario">
+	<for name="formulario">
+    	<p>Matricula:<br><input type="text" name="calve" id="calve"></p>
+        <p>Nombre:<br><textarea name="text" id="texto"></textarea></p>
+        <p><input type="button" name="grabar" id="grabar" value="Grabar"></p>
+ </form>
+</section>
+<section id="cajadatos">
+	Sin Informacion
+</section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Canvas2</title>
+<script type="text/javascript">
+function iniciar()
+{
+	var elemento=document.getElementById('lienzo');
+	lienzo=elemento.getContext('2d');
+	lienzo.beginPath();
+	lienzo.arc(100,100,50,0,Math.PI*2,false);
+	lienzo.stroke();
+	
+	//lienzo.moveTo(100,100);
+	//lienzo.lineTo(600,600);
+	//lienzo.lineTo(100,200);
+	//lienzo.closePath();
+	//lienzo.fill();
+	//lienzo.stroke();
+	lienzo.beginPath();
+	lienzo.moveTo(50,50);
+	lienzo.quadraticCurveTo(100,125,50,200);
+	lienzo.moveTo(250,50);
+	lienzo.bezierCurveTo(200,125,300,125,250,200);
+	lienzo.bezierCurveTo(200,125,300,125,250,50);
+	lienzo.stroke();
+	
+	lienzo.moveTo(280,50);
+	lienzo.fillStyle="rgb(200,0,0)";
+	lienzo.fillRect(10,10,55,50);
+	
+	lienzo.fillStyle="rgb(0,0,200,0.5)";
+	lienzo.fillRect(30,30,55,50);
+	
+}
+</script>
+<style type="text/css">
+canvas 
+{
+	border:1px solid #000;
+}
+</style>
+</head>
+
+<body onLoad="iniciar()">
+<section id="cajalienzo">
+<canvas id="lienzo" width="500" height="500">
+Su navegador no soporta el canvas.
+</canvas>
+</section>
+</body>
+</html>
